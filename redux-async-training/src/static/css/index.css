@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Source+Code+Pro');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  color: rgb(235, 235, 235);
+  background: rgb(47, 48, 48);
+}
+
+.box {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; */
+  display: block;
+  height: 400px;
+  max-height: 400px;
+  margin: 30px 0 0 0;
+  padding: 10px 0 0 0;
+  border: 2px solid rgb(85, 170, 235);
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-family: 'Source Code Pro', monospace;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  max-width: 500px;
+  font-size: 28px;
+  cursor: pointer;
+  background: rgb(47, 48, 48);
+  transition: all .4s;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-blue {
+  color: rgb(85, 170, 235);
+  border: 2px solid rgb(85, 170, 235);
+}
+
+#getUser:hover {
+  color: rgb(47, 48, 48);
+  background: rgb(85, 170, 235);
+}
+
+.pending {
+  color: rgb(226, 240, 32);
+}
+
+.error {
+  color: rgb(196, 57, 57);
+}
+
+.success {
+  color: rgb(57, 196, 94);
+}
+

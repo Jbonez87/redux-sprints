@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Source+Code+Pro');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background: rgb(47, 48, 48);
+}
+
+#counter {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 45px;
+  color: rgb(85, 212, 214);
+}
+
+.box {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; */
+  display: block;
+  margin: 30px 0 0 0;
+  padding: 10px 0 0 0;
+  border: 2px solid rgb(80, 233, 146);
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-family: 'Source Code Pro', monospace;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  max-width: 500px;
+  font-size: 28px;
+  cursor: pointer;
+  background: rgb(47, 48, 48);
+  transition: all .4s; 
+}
+
+.btn:focus {
+  outline: none;
+}
+
+#add:hover,
+#minus:hover,
+#reset:hover,
+#new:hover,
+#delete:hover,
+#delete-all:hover {
+  color: rgb(47, 48, 48);
+}
+
+.btn-blue {
+  color: rgb(85, 170, 235);
+  border: 2px solid rgb(85, 170, 235);
+}
+
+#add:hover, #new:hover {
+  background: rgb(85, 170, 235);
+}
+
+.btn-green {
+  color: rgb(80, 233, 146);
+  border: 2px solid rgb(80, 233, 146);
+  ;
+}
+
+#minus:hover, #delete:hover {
+  background: rgb(80, 233, 146);
+}
+
+.btn-red {
+  color: rgb(233, 86, 86);
+  border: 2px solid rgb(233, 86, 86);
+}
+
+#reset:hover, #delete-all:hover {
+  background: rgb(233, 86, 86);
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 980px;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list li {
+  border: 2px solid rgb(73, 10, 61);
+  border-radius:5px;
+  background-color: rgb(189, 21, 80);
+  color: rgb(255, 255, 255);
+  flex: 1 1 200px;
+}
+
+#todo {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  background: rgb(47, 48, 48);
+  color: rgb(255, 255, 255);
+}
+
+#todo:focus {
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-columns: repeat(auto-fill, minmax(200px 1fr));*/
+  grid-gap: 20px;
+}
+
